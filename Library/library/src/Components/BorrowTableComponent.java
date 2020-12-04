@@ -112,9 +112,8 @@ public class BorrowTableComponent extends Box {
                 // 查询
                 if("".equals(sField.getText().trim())){
                     JOptionPane.showMessageDialog(jf, "请输入查询内容");
-                } else if (user.getUserType() != 0 &&
-                        (jcbColumn.getSelectedIndex() == 0 || jcbColumn.getSelectedIndex() == 1)){
-                    JOptionPane.showMessageDialog(jf, "非管理员无权操作");
+                } else if (user.getUserType() != 0){
+                    JOptionPane.showMessageDialog(jf, "非管理员无权查找");
                     return;
                 } else {
                     model.getDataVector().clear();
