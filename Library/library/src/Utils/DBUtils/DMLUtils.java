@@ -224,7 +224,7 @@ public class DMLUtils {
         try {
             conn = DBUtil.getConnection();
             // 更新借阅表
-            String sql2 = "insert into t_borrowing value (?, ?, ?)";
+            String sql2 = "insert into t_borrowing values (?, ?, ?)";
             ps = conn.prepareStatement(sql2);
             ps.setString(1, user.getUserId());
             ps.setString(2, book.getBookISBN());

@@ -34,7 +34,7 @@ public class BookTableComponent extends Box {
 
     final int WIDTH = 1000;
 
-    final int COLUMN_PER_PAGE = 18;
+    final int COLUMN_PER_PAGE = 19;
 
     JFrame jf;
     Vector<Vector> td = new Vector<>();
@@ -288,10 +288,19 @@ public class BookTableComponent extends Box {
         int i = COLUMN_PER_PAGE * (page - 1);
         try {
             conn = DBUtil.getConnection();
-            String sql = "select tb.isbn isbn, tb.name name, tb.author author, tb.price price, tb.instock instock, tt.typename typename from t_book tb, t_booktype tt where tb.type = tt.typeid order by isbn limit ?, ? ";
+            String sql = "select * from " +
+                    "(select tb.isbn isbn, tb.name name, tb.author author, tb.price price, tb.instock instock, tt.typename typename " +
+                    "from t_book tb, t_booktype tt where tb.type = tt.typeid order by isbn) " +
+                    "where rownum < ?" +
+                    "minus " +
+                    "select * from " +
+                    "(select tb.isbn isbn, tb.name name, tb.author author, tb.price price, tb.instock instock, tt.typename typename " +
+                    "from t_book tb, t_booktype tt " +
+                    "where tb.type = tt.typeid order by isbn) " +
+                    "where rownum <= ?";
             ps = conn.prepareStatement(sql);
-            ps.setInt(1,COLUMN_PER_PAGE * (page - 1));
-            ps.setInt(2, COLUMN_PER_PAGE);
+            ps.setInt(1, COLUMN_PER_PAGE * page );
+            ps.setInt(2, COLUMN_PER_PAGE * (page - 1));
             rs = ps.executeQuery();
             while(rs.next()){
                 Vector<Object> temp = new Vector<>();

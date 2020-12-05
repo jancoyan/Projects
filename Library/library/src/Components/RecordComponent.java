@@ -57,7 +57,10 @@ public class RecordComponent  extends Box{
         ResultSet rs = null;
         try {
             conn = DBUtil.getConnection();
-            String sql = "select tl.id id, tl.isbn isbn, tl.datetime datetime, tt.typename typename from t_user_log  as tl join t_operator_type as tt  where tt.typeid = tl.type order by datetime desc";
+            String sql = "select id, isbn, datetime, typename " +
+                    "from T_USER_LOG, T_OPERATOR_TYPE " +
+                    "where T_USER_LOG.TYPE = T_OPERATOR_TYPE.TYPEID " +
+                    "order by DATETIME desc";
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             int i = 0;

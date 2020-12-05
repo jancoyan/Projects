@@ -34,7 +34,7 @@ public class AboutDialog extends JDialog {
 
         Box vBox = Box.createVerticalBox();
 
-        JLabel titleLabel = new JLabel("图书馆管理系统V1.1");
+        JLabel titleLabel = new JLabel("图书馆管理系统V1.2");
         JLabel authorLabel  = new JLabel("作者：Jingcun Yan");
         JLabel dateLabel = new JLabel("时间：2020.11.15");
 

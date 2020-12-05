@@ -12,7 +12,7 @@ public class DBUtil {
 
     static {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -20,7 +20,7 @@ public class DBUtil {
 
     //获取数据库连接
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/library", "root", "333");
+        return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "c##libmanager", "333");
     }
 
     /**
