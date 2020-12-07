@@ -8,7 +8,7 @@
     <option name="excludeAndroidRJavaFile" value="false" />
     <option name="excludedDirectories">
       <list>
-        <option value="$PROJECT_DIR$/V1.0" />
+        <option value="$PROJECT_DIR$/master" />
       </list>
     </option>
   </component>

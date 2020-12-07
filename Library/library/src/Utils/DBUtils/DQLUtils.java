@@ -13,6 +13,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -140,6 +141,27 @@ public class DQLUtils {
             e.printStackTrace();
         } finally {
             DBUtil.close(conn, ps , rs);
+        }
+        return rst;
+    }
+
+    public static Map<Integer, Integer> bookTypeAndNumber(){
+        Map<Integer, Integer> rst = new HashMap<>();
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            conn = DBUtil.getConnection();
+            String sql = "select type, count(type) as cnt from t_book GROUP BY type";
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                rst.put(rs.getInt("TYPE"), rs.getInt("CNT"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBUtil.close(conn, ps, rs);
         }
         return rst;
     }

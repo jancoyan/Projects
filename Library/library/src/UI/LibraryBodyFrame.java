@@ -107,6 +107,7 @@ public class LibraryBodyFrame {
         DefaultMutableTreeNode bookManage = new DefaultMutableTreeNode("所有图书");
         root.add(bookManage);
         DefaultMutableTreeNode guessYouLike = new DefaultMutableTreeNode("图书推荐");
+        root.add(guessYouLike);
         DefaultMutableTreeNode userManage = new DefaultMutableTreeNode("用户管理");
         DefaultMutableTreeNode recordManage = new DefaultMutableTreeNode("借还记录");
         if(user.getUserType() == 0) {
@@ -122,7 +123,7 @@ public class LibraryBodyFrame {
 
         tree.setBackground(color);
         //设置当前tree默认选中图书管理
-        tree.setSelectionRow(1);
+        tree.setSelectionRow(2);
         tree.addTreeSelectionListener(new TreeSelectionListener() {
             //当条目选中变化后，这个方法会执行
             @Override
