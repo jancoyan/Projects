@@ -1,6 +1,7 @@
 package Utils.DBUtils;
 
 import java.sql.*;
+import java.util.ResourceBundle;
 
 
 /**
@@ -18,9 +19,17 @@ public class DBUtil {
         }
     }
 
-    //获取数据库连接
+    /**
+     *  获取数据库连接
+     * @return 数据库连接对象
+     * @throws SQLException SQL 异常
+     */
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "c##libmanager", "333");
+        ResourceBundle bundle = ResourceBundle.getBundle("Utils.DBUtils.db");
+        String user = bundle.getString("user");
+        String passWord = bundle.getString("password");
+        String url = bundle.getString("url");
+        return DriverManager.getConnection(url, user, passWord);
     }
 
     /**

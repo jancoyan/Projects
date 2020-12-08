@@ -54,7 +54,7 @@ public class LoginFrame {
 
         //标题Box
         Box tBox = Box.createHorizontalBox();
-        JLabel title = new JLabel("图书馆管理系统 V1.1");
+        JLabel title = new JLabel("图书馆管理系统 V1.2");
         vBox.add(Box.createVerticalStrut(30));
         tBox.add(title);
         vBox.add(tBox);

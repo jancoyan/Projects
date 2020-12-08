@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Library" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b67acc6b-4ab2-4a23-890a-4c45fb0d3b0a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,26 +44,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/master" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/library" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\code\IDEA\testBS" />
-      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\Components" />
-      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\Utils" />
-      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\UI" />
-      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\imgs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GITHUB\Projects\Library\library\src" />
       <recent name="D:\GITHUB\Curriculum\myProjects\Library\library\src\Utils" />
       <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\jar" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GITHUB\Projects\Library\library\src\Utils\DBUtils" />
+      <recent name="D:\GITHUB\Projects\Library\library" />
+      <recent name="E:\code\IDEA\testBS" />
+      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\Components" />
+      <recent name="D:\GITHUB\Curriculum\myLittleProject\Library\library\src\Utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.temp">
+  <component name="RunManager" selected="Application.LoginFrame">
     <configuration name="LibraryBodyFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI.LibraryBodyFrame" />
       <module name="library" />
@@ -113,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.temp" />
         <item itemvalue="Application.LoginFrame" />
+        <item itemvalue="Application.temp" />
         <item itemvalue="Application.PwdUtils" />
         <item itemvalue="Application.LibraryBodyFrame" />
       </list>
@@ -215,6 +221,9 @@
       <workItem from="1607240911923" duration="3765000" />
       <workItem from="1607250594176" duration="3535000" />
       <workItem from="1607321448928" duration="5244000" />
+      <workItem from="1607350897994" duration="7231000" />
+      <workItem from="1607361603763" duration="2579000" />
+      <workItem from="1607439617578" duration="2929000" />
     </task>
     <servers />
   </component>
@@ -242,6 +251,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606928184651" />
+    <state x="487" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1607440033683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1607440033683" />
     <state x="443" y="328" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606217267598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -258,34 +271,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="509" y="114" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1606299464606" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607244512201">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607440013622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607244512201" />
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1607327361823">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607440013622" />
+    <state width="1493" height="88" key="GridCell.Tab.0.bottom" timestamp="1607442548473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607327361823" />
-    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1607327361823">
+    <state width="1493" height="88" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607442548473" />
+    <state width="1493" height="88" key="GridCell.Tab.0.center" timestamp="1607442548473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607327361823" />
-    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1607327361823">
+    <state width="1493" height="88" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607442548473" />
+    <state width="1493" height="88" key="GridCell.Tab.0.left" timestamp="1607442548473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607327361823" />
-    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1607327361823">
+    <state width="1493" height="88" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607442548473" />
+    <state width="1493" height="88" key="GridCell.Tab.0.right" timestamp="1607442548473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607327361823" />
+    <state width="1493" height="88" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607442548473" />
     <state width="212" height="539" key="HiddenNamespacesPopup" timestamp="1607090637697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="212" height="539" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1607090637697" />
-    <state x="238" y="70" key="SettingsEditor" timestamp="1607244515900">
+    <state x="238" y="0" key="SettingsEditor" timestamp="1607440870464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="238" y="70" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607244515900" />
+    <state x="238" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607440870464" />
     <state x="490" y="154" width="576" height="540" key="StructurePopup" timestamp="1606477451967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -310,10 +323,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606581192042" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1607252413811">
+    <state x="501" y="88" width="563" height="487" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1607356717774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607252413811" />
+    <state x="501" y="88" width="563" height="487" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1607356717774" />
+    <state x="590" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1607441999529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="590" y="164" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1607441999529" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1607442029360">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607442029360" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607323265736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

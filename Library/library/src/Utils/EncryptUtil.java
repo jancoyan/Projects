@@ -55,7 +55,7 @@ public class EncryptUtil {
     private String messageDigest(String res,String algorithm){
         try {
             MessageDigest md = MessageDigest.getInstance(algorithm);
-            byte[] resBytes = charset==null?res.getBytes():res.getBytes(charset);
+            byte[] resBytes = charset == null ? res.getBytes():res.getBytes(charset);
             return base64(md.digest(resBytes));
         } catch (Exception e) {
             e.printStackTrace();
