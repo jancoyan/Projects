@@ -11,14 +11,12 @@ import Components.Panel.BackgroundPanel;
 import Domain.User;
 import Utils.DBUtils.DMLUtils;
 import Utils.EncryptUtil;
-import Utils.RealPath;
 import Utils.ScreenUtils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -37,7 +35,7 @@ public class UpdateUserDialog extends JDialog {
         BackgroundPanel bgp = null;
 
         try {
-            bgp = new BackgroundPanel(ImageIO.read(new File(RealPath.realPath("updateUser.png"))));
+            bgp = new BackgroundPanel(ImageIO.read(getClass().getResource("/imgs/updateUser.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

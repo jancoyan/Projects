@@ -6,4 +6,5 @@ public class RealPath {
     public static String realPath(String path){
         return PATH + path;
     }
+
 }

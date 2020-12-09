@@ -3,7 +3,6 @@ package Utils.DBUtils;
 import java.sql.*;
 import java.util.ResourceBundle;
 
-
 /**
  * @author Jingcun Yan
  */
@@ -13,7 +12,7 @@ public class DBUtil {
 
     static {
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Class.forName("oracle.jdbc.OracleDriver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -25,7 +24,8 @@ public class DBUtil {
      * @throws SQLException SQL 异常
      */
     public static Connection getConnection() throws SQLException {
-        ResourceBundle bundle = ResourceBundle.getBundle("Utils.DBUtils.db");
+
+        ResourceBundle bundle = ResourceBundle.getBundle("db");
         String user = bundle.getString("user");
         String passWord = bundle.getString("password");
         String url = bundle.getString("url");

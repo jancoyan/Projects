@@ -10,14 +10,12 @@ import Components.Panel.BackgroundPanel;
 import Domain.User;
 import Utils.DBUtils.DMLUtils;
 import Utils.DBUtils.DQLUtils;
-import Utils.RealPath;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -37,7 +35,7 @@ public class SignUpFrame {
 
         BackgroundPanel bgp = null;
         try {
-            bgp = new BackgroundPanel(ImageIO.read(new File(RealPath.realPath("regist.png"))));
+            bgp = new BackgroundPanel(ImageIO.read(getClass().getResource("/imgs/regist.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

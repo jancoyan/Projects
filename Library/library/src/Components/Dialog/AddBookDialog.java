@@ -10,14 +10,12 @@ import Components.ActionListenerCallBack;
 import Components.Panel.BackgroundPanel;
 import Domain.Book;
 import Utils.DBUtils.DMLUtils;
-import Utils.RealPath;
 import Utils.ScreenUtils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -35,7 +33,7 @@ public class AddBookDialog extends JDialog {
         this.setBounds((ScreenUtils.getScreenWidth()-WIDTH)/2,(ScreenUtils.getScreenHeight()-HEIGHT)/2,WIDTH,HEIGHT);
         BackgroundPanel bgp = null;
         try {
-            bgp = new BackgroundPanel(ImageIO.read(new File(RealPath.realPath("addbook.png"))));
+            bgp = new BackgroundPanel(ImageIO.read(getClass().getResource("/imgs/addbook.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -10,7 +10,6 @@ import Components.Panel.BackgroundPanel;
 import Domain.User;
 import Utils.DBUtils.DQLUtils;
 import Utils.EncryptUtil;
-import Utils.RealPath;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -18,7 +17,6 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +44,7 @@ public class LoginFrame {
         jf.setBounds((Toolkit.getDefaultToolkit().getScreenSize().width - WIDTH)/2, (Toolkit.getDefaultToolkit().getScreenSize().height - HEIGHT)/2, WIDTH, HEIGHT);
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        BackgroundPanel bgp = new BackgroundPanel(ImageIO.read(new File(RealPath.realPath("login.png"))));
+        BackgroundPanel bgp = new BackgroundPanel(ImageIO.read(getClass().getResource("/imgs/login.png")));
         bgp.setBounds(0, 0, WIDTH, HEIGHT);
 
         //Panel 中的大容器，用来存放三组控件
